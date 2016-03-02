@@ -1,0 +1,49 @@
+
+
+<div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      
+
+      <!-- Jumbotron -->
+      <div class="container">
+ 
+      <form class="form-signin" ng-submit = "entrar()">
+        <h2 class="form-signin-heading">Ingrese  Los datos del Usuario </h2>
+        <label for="Usuario" class="sr-only">Usuario</label>
+        <input type="Text" id="Usuario" class="form-control" ng-model="lo.txtUsuario"placeholder="Usuario" required autofocus>
+        <label for="Nombre" class="sr-only">Nombre</label>
+        <input type="Text" id="Nombre" class="form-control" ng-model="lo.txtNombre"placeholder="Nombre" required>
+        <label for="Rut" class="sr-only">Rut</label>
+        <input type="Text" id="Rut" class="form-control" ng-model="lo.txtRut" placeholder="Rut" required >
+      
+		<label for="greenRadio">Administrador:</label>
+    		<input id="greenRadio" type="radio" ng-model="lo.txtnivel" value="0" />
+
+    <label for="blueRadio">Usuario:</label>
+    <input id="blueRadio" type="radio" ng-model="lo.txtnivel" value="1" /><br />
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" ng-model="lo.txtPass"placeholder="Password" required>
+        <div class="checkbox">
+          <div class="col-md-6">
+            <input class="btn btn-lg btn-default btn-block" ng-click="limpiar()" type="reset" value="Limpiar">
+     		</div> 
+     		<div class="col-md-6">    
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+     </div> 
+        </div>
+      </form>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+   
+      <footer class="footer">
+        <p>&copy; jairoCabarcas.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+

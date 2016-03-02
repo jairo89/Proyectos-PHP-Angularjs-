@@ -1,0 +1,48 @@
+
+
+<div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      
+
+      <!-- Jumbotron -->
+      <div class="container">
+ 
+      <form class="form-signin" ng-submit = "entrar()">
+        <h2 class="form-signin-heading">Ingrese  Los Datos </h2>
+        <label for="txtOpe" class="sr-only">Operador</label>
+        <input type="Text" id="txtOpe" class="form-control" ng-model="lo.txtOpe"placeholder="Operador" required autofocus>
+        <label for="txtEmp" class="sr-only">Empresa</label>
+        <input type="Text" id="txtEmp" class="form-control" ng-model="lo.txtEmp"placeholder="Empresa" required>
+        <label for="txtdate" class="sr-only">Fecha</label>
+        <input type="date" id="txtdate"  class="form-control"  ng-model="lo.txtdate"   value="{{ date | date: 'yyyy-MM-dd' }}" placeholder="Fecha" required >
+        <label for="Rut" class="sr-only">Motivo</label>
+        <textarea ng-model="lo.txtMotivo" cols="40" rows="10"placeholder="Motivo" required ></textarea ><br>
+       
+        <SELECT NAME="selCombo"ng-model="lo.txtEstado" SIZE=1 > 
+        <OPTION VALUE="Proceso">Proceso</OPTION>
+        <OPTION VALUE="finalizado">Finalizado</OPTION>
+        </SELECT> 
+       
+        <label for="txtNum" class="sr-only">Numero de registro a iniciar</label>
+          <input type="Text" id="txtNum" class="form-control" ng-model="lo.txtNum" placeholder="Numero de registro a iniciar" required >
+              <div class="checkbox">
+              <div class="col-md-6">
+               <input class="btn btn-lg btn-default btn-block" ng-click="limpiar()" type="reset" value="Limpiar">
+              </div> 
+              <div class="col-md-6">    
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+     </div> 
+        </div>
+      </form>
+
+    </div> <!-- /container -->
+
+   <footer class="footer">
+        <p>&copy; jairoCabarcas.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+

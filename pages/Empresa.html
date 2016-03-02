@@ -1,0 +1,42 @@
+
+
+<div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      
+
+      <!-- Jumbotron -->
+      <div class="container">
+ 
+      <form class="form-signin" ng-submit = "entrar()">
+        <h2 class="form-signin-heading">Ingrese  Los datos </h2>
+        <label for="NomEmp" class="sr-only">Nombre de la Empresa</label>
+        <input type="Text" id="NomEmp" class="form-control" ng-model="lo.txtNomEmp"placeholder="Nombre de la Empresa" required autofocus>
+        <label for="RutEmp" class="sr-only">Rut de la Empresa</label>
+        <input type="Text" id="RutEmp" class="form-control" ng-model="lo.txtRutEmp" placeholder="Rut de la Empresa" required >
+        <label for="NumEmp" class="sr-only">Numero Inicia de la Empresa para los Registros</label>
+        <input type="Text" id="NumEmp" class="form-control" ng-model="lo.txtNumEmp" placeholder="Numero Inicia de la Empresa para los Registros" required >
+      
+		
+        <div class="checkbox">
+          <div class="col-md-6">
+            <input class="btn btn-lg btn-default btn-block" ng-click="limpiar()" type="reset" value="Limpiar">
+     		</div> 
+     		<div class="col-md-6">    
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+     </div> 
+        </div>
+      </form>
+
+    </div> <!-- /container -->
+
+
+   
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+   
+      <footer class="footer">
+        <p>&copy; jairoCabarcas.</p>
+      </footer>
+
+    </div> <!-- /container -->
